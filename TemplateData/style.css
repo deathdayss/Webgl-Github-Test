@@ -10,16 +10,32 @@ div {
     border-style: solid;
 }
 
-#unity-container {
-    position: absolute;
+.before-player {
+    float: left;
 }
 
-#unity-container.unity-desktop {
+.after-player {
+    float: left;
+}
+
+.next-line {
+    float: left;
+    width: 500px;
+    height: 325px;
+}
+
+#unity-container {
+    float: left;
+    /* position: absolute; */
+}
+
+/* #unity-container.unity-desktop {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%)
-}
+} */
 
+/* don't need to change */
 #unity-container.unity-mobile {
     width: 100%;
     height: 100%
@@ -29,6 +45,7 @@ div {
     background: #231F20
 }
 
+/* don't need to change */
 .unity-mobile #unity-canvas {
     width: 100%;
     height: 100%
@@ -39,6 +56,10 @@ div {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    float: left;
+    /* position: relative;
+    bottom: 400px;
+    left: 400px; */
     display: none
 }
 
@@ -63,7 +84,7 @@ div {
 }
 
 #unity-footer {
-    position: relative
+    position: relative;
 }
 
 .unity-mobile #unity-footer {
@@ -77,13 +98,13 @@ div {
     background: url('webgl-logo.png') no-repeat center
 }
 
-#unity-build-title {
+/* #unity-build-title {
     float: right;
     margin-right: 10px;
     line-height: 38px;
     font-family: arial;
     font-size: 18px
-}
+} */
 
 #unity-fullscreen-button {
     float: right;
